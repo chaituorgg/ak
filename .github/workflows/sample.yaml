@@ -39,7 +39,27 @@ jobs:
         what to greet: ck
     
     - name: output display
-      run: echo "${{steps.greet.outputs.time}}
+      run: echo "${{steps.greet.outputs.time}}"
+      
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test long list in VM 
+        run: |
+          ls
+          pwd
+          
+      - name: checkout last commit of repo and fectch the code
+        uses: actions/checkout@v1
+      - name: check repo
+        run: |
+          git log 
+          pwd
+          ls -a
+          ls -ltr
+          df -h
+        
+  
         
 
     
