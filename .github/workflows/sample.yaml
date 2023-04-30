@@ -25,7 +25,7 @@ jobs:
           pwd 
           echo "please find path"
   job3:
-    runs-on: mac
+    runs-on: ubuntu-latest
     steps:
     - name: ck
       run: |
