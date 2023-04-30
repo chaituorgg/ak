@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string 
-        run: echo "Hello world"
+        run: eccho "Hello world"
       - name : multiline commands
         run: |
           git --version
@@ -18,6 +18,7 @@ jobs:
   
   job2:
     runs-on: windows-latest
+    needs: ["Job1"]
     steps:
       - name: new file 
         run: pwd  
