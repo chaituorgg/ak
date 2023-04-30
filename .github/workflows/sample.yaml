@@ -15,3 +15,12 @@ jobs:
         run: |
           git --version
           pwd
+  
+  job2:
+    runs-on: windows-latest
+    steps:
+      - name: new file 
+        run: pwd  "this is the location"
+
+    
+  
