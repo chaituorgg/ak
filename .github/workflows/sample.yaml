@@ -24,6 +24,23 @@ jobs:
         run: |
           pwd 
           echo "please find path"
+  job3:
+    runs-on: mac
+    steps:
+    - name: ck
+      run: |
+        pwd
+        git --version
+        
+    - name : checkout repository 
+      id: greet
+      uses: actions/hello-world-javascript-action@main
+      with:
+        what to greet: ck
+    
+    - name: output display
+      run: echo "${{steps.greet.outputs.time}}
+        
 
     
   
