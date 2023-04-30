@@ -20,7 +20,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: new file 
-        run: pwd  "this is the location"
+        run: pwd  
 
     
   
