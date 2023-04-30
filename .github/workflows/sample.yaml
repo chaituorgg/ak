@@ -58,6 +58,10 @@ jobs:
           ls -a
           ls -ltr
           df -h
+          echo $GITHUB_SHS
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{github.token}}"
         
   
         
