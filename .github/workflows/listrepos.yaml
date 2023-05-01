@@ -1,7 +1,7 @@
 name: list repos
-on: 
+on:
   repository_dispatch:
-    types:[request]
+    types: [request]
 jobs:
   Job1:
     runs-on: ubuntu-latest
