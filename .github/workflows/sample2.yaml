@@ -1,0 +1,16 @@
+name: sample2 workflow
+
+on: [push,pull_request]
+
+  
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      step:
+        - name: first step for 1st PR
+          run: | 
+            git log 
+           
+    
