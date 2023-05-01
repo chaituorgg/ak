@@ -1,5 +1,7 @@
 name: list repos
-on: [push]
+on: 
+  repository_dispatch:
+    types:[request]
 jobs:
   Job1:
     runs-on: ubuntu-latest
