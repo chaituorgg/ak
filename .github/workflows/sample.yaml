@@ -1,7 +1,10 @@
 name: shell commands
 
 #define events 
-on: [push]
+on: 
+  push:
+    branches-ignore:
+      - master
 
 #jobs 
 
