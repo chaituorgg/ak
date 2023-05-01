@@ -1,8 +1,8 @@
 name: list repos
 on: [push]
 jobs:
-  list of repos:
-  runs-on: ubuntu-latest
+  Job1:
+    runs-on: ubuntu-latest
     steps:
       - name: list of repos
         run: |
