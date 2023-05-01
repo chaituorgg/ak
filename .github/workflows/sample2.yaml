@@ -8,9 +8,8 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      step:
-        - name: first step for 1st PR
-          run: | 
-            git log 
+      - name: first step for 1st PR
+         run: | 
+          git log 
            
     
