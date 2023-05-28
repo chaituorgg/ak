@@ -33,8 +33,14 @@ jobs:
         
       - name: Tets ls
         run: |
-          ls
-          ls -la
+          pwd
+          echo "$GITHUB_SHA"
+          pwd
+          echo "$GITHUB_REPOSITORY"
+          pwd
+          echo "$GITHUB_WORKSPACE"
+          pwd
+          echo "${{ github.token }}"
           pwd
           
     
