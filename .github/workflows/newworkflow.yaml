@@ -35,6 +35,10 @@ jobs:
           ls -la
           pwd
           
+      - name: checkout repo
+        uses: actions/checkout@v3
+        
+          
     
         
 
