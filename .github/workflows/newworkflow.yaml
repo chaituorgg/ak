@@ -28,16 +28,14 @@ jobs:
       - name: Outout of step1 
         run: echo "{{ steps.greet.outputs.time}}"
         
+      - name: checkout repo
+        uses: actions/checkout@v3
         
       - name: Tets ls
         run: |
           ls
           ls -la
           pwd
-          
-      - name: checkout repo
-        uses: actions/checkout@v3
-        
           
     
         
