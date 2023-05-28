@@ -32,7 +32,7 @@ jobs:
       - name: Tets ls
         run: |
           ls
-          ls-la
+          ls -la
           pwd
           
     
