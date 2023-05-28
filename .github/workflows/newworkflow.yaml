@@ -1,6 +1,6 @@
 name: Testworkflow
 
-on : [push ]
+on : [push]
 
 jobs:
   newjob:
@@ -16,17 +16,23 @@ jobs:
         pwd
         ls -la
         
-  newjob2:
-    runs-on: windows-latest
-    
+  JOB3:
+    runs-on: ubuntu-latest
     steps:
-     - name: echo a string
-       run: echo "Hello world"
-       
-     - name: 3 line script
-       run: |
-        Get-Content
-        pwd
-        ls -la
+      - name: check refered action 
+        id: greet
+        uses: actions/hello-world-javascript-action@v1.1
+        with:
+          who-to-greet: chaitanya
+        
+      - name: Outout of step1 
+        run: echo"{{steps.greet.outputs.time}}
+    
+        
+
+        
+        
+        
+  
         
   
