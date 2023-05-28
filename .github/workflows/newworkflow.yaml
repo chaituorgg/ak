@@ -27,6 +27,14 @@ jobs:
         
       - name: Outout of step1 
         run: echo "{{ steps.greet.outputs.time}}"
+        
+        
+      - name: Tets ls
+        run: |
+          ls
+          ls-la
+          pwd
+          
     
         
 
