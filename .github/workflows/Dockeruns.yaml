@@ -7,8 +7,10 @@ on:
 jobs:
   dockerest:
     runs-on: ubuntu-latest
-    
+    container: 
+      image: node:19-alpine3.16
     steps:
-      - name: ac
-        run: pwd
+      - name: nodeversion
+        run: node -v
+        
     
