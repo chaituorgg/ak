@@ -3,12 +3,31 @@ name: Docker workflow
 on:
   pull_request:
     types: [opened,closed]
-    
-Jobs:
-  Docker test:
+
+jobs:
+  dockertest:
     runs-on: ubuntu-latest
     
     steps:
       - name: ac
         run: pwd
+        
+        
+# name: Testworkflow
+
+# on : [push]
+
+# jobs:
+#   newjob:
+#     runs-on: ubuntu-latest
+    
+#     steps:
+#      - name: echo a string
+#        run: echo "Hello world"
+       
+#      - name: 3 line script
+#        run: |
+#         node -v
+#         pwd
+#         ls -la
     
