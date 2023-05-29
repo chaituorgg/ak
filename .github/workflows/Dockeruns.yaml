@@ -1,0 +1,14 @@
+name: Docker workflow
+
+on:
+  pull_request:
+    types: [opened,closed]
+    
+Jobs:
+  Docker test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: ac
+        run: pwd
+    
