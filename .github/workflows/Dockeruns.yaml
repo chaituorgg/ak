@@ -2,7 +2,7 @@ name: Docker workflow
 
 on:
   pull_request:
-    types: [opened,closed]
+    branches: CDMA4414-patch-4
     
 jobs:
   dockerest:
