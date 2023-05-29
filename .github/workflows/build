@@ -1,0 +1,13 @@
+name: Develop branch 
+
+on: 
+  push:
+   branches: develop
+   
+jobs:
+  new_job:
+    runs-on: ubuntu-latest
+    steps:
+      step1:
+        - name: ck
+          run: pwd
