@@ -1,8 +1,12 @@
 name: Docker workflow
 
 on:
-  pull_request:
-    branches: CDMA4414-patch-4
+  push:
+    branches-ignore:
+      - CDMA4414-patch-3
+      - CDMA4414-patch-2
+      - CDMA4414-patch-1
+      - master
     
 jobs:
   dockerest:
