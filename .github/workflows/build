@@ -1,7 +1,7 @@
 name: Develop branch 
 
 on: 
-  push:
+  pull_request:
    branches: develop
    
 jobs:
