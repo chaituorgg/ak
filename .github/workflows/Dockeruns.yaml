@@ -1,0 +1,20 @@
+name: Docker workflow
+
+on:
+  push:
+    branches-ignore:
+      - CDMA4414-patch-3
+      - CDMA4414-patch-2
+      - CDMA4414-patch-1
+      - master
+    
+jobs:
+  dockerest:
+    runs-on: ubuntu-latest
+    container: 
+      image: node:19-alpine3.16
+    steps:
+      - name: nodeversion
+        run: node -v
+        
+    
